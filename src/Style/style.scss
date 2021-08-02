@@ -12,10 +12,11 @@ body {
   height: 100vh;
   min-height: 550px;
   overflow: hidden;
+  background-color: #0d0d0d;
 }
 
 nav {
-  background-color: #0D0D0D;
+  background-color: #0d0d0d;
   ul {
     display: flex;
     align-items: center;
@@ -93,8 +94,10 @@ nav {
       padding: 20px 30px;
       line-height: 1.5;
       color: white;
+    border-bottom: 1px solid #000000;
+
     }
-    background-color: #110F0F;
+    background-color: #110f0f;
     color: rgb(226, 226, 226);
     font-family: "Lato", sans-serif;
     line-height: 1.6;
@@ -176,7 +179,6 @@ nav {
       font-size: 14px;
       font-weight: 400;
       margin-bottom: 40px;
-
     }
     pre {
       padding: 0px 24px;
@@ -231,9 +233,10 @@ nav {
   .input_field {
     textarea {
       font-size: 18px;
-      background-color: #1B181A;
+      background-color: #1b181a;
       font-family: "Lato", sans-serif;
       font-weight: 400;
+      border-bottom: 1px solid #000000;
     }
   }
 }
