@@ -94,17 +94,14 @@ nav {
       line-height: 1.5;
       color: white;
     }
-  }
-  .output {
     background-color: #110F0F;
-    color: white;
+    color: rgb(226, 226, 226);
     font-family: "Lato", sans-serif;
     line-height: 1.6;
     h1,
     h2,
     h3,
     h4 {
-      color: #ffffff;
       font-weight: 600;
     }
     h1,
@@ -119,7 +116,7 @@ nav {
     h1 {
       font-size: 36px;
       position: relative;
-      margin-bottom: 50px;
+      margin: 30px 0 40px;
       &::after {
         position: absolute;
         top: 120%;
@@ -132,7 +129,6 @@ nav {
     }
     h2 {
       font-size: 30px;
-      margin: 24px 0 6px;
     }
     h3 {
       font-size: 26px;
@@ -154,6 +150,7 @@ nav {
       padding: 0;
       margin: 0;
       margin-left: 40px;
+      margin-bottom: 40px;
     }
     li {
       line-height: 1.6;
@@ -168,6 +165,7 @@ nav {
       font-size: 18px;
       line-height: 1.6;
       max-width: 540px;
+      color: rgb(241, 241, 241);
     }
     code {
       padding: 2px 6px;
@@ -177,6 +175,8 @@ nav {
       line-height: 1.7;
       font-size: 14px;
       font-weight: 400;
+      margin-bottom: 40px;
+
     }
     pre {
       padding: 0px 24px;
@@ -214,17 +214,18 @@ nav {
     table {
       border-collapse: collapse;
       margin: 1em 1em;
-      border: 1px solid #ccc;
+      border: 1px solid rgb(163, 163, 163);
+      margin-bottom: 40px;
     }
     table thead {
-      background-color: #eee;
+      background-color: rgb(56, 56, 56);
     }
     table thead td {
       color: #666;
     }
     table td {
       padding: 0.5em 1em;
-      border: 1px solid #ccc;
+      border: 1px solid rgb(155, 155, 155);
     }
   }
   .input_field {
