@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Mono&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +10,11 @@
 body {
   height: 100vh;
   min-height: 550px;
+  overflow: hidden;
+}
+
+nav {
+  background-color: #0D0D0D;
 }
 
 nav ul {
@@ -24,8 +29,9 @@ nav ul {
           justify-content: space-between;
   list-style-type: none;
   padding: 10px 35px;
-  border: 1px solid #f6f6f6;
+  border: 1px solid #000000;
   font-family: "Montserrat", sans-serif;
+  color: white;
 }
 
 nav ul li .github_logo {
@@ -41,7 +47,12 @@ nav ul li .github_logo svg {
   display: block;
 }
 
+nav ul li .github_logo svg path {
+  fill: white;
+}
+
 nav ul li h1 {
+  padding-left: 77px;
   cursor: pointer;
   display: block;
   width: -webkit-fit-content;
@@ -69,13 +80,211 @@ nav ul .autosave svg {
   height: 18px;
 }
 
+nav ul .autosave svg path {
+  fill: #35ff69;
+}
+
 nav ul .autosave .autosave_txt {
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 700;
 }
 
-.red {
-  color: #ff3366;
+.highlight {
+  color: #35ff69;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  height: 90vh;
+}
+
+.wrapper .input_field,
+.wrapper .output {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .input_field textarea,
+.wrapper .input_field .output_box,
+.wrapper .output textarea,
+.wrapper .output .output_box {
+  width: 100%;
+  height: 90vh;
+  max-height: 850px;
+  border: none;
+  outline: none;
+  resize: none;
+  overflow: scroll;
+  padding: 20px 30px;
+  line-height: 1.5;
+  color: white;
+}
+
+.wrapper .output {
+  background-color: #110F0F;
+  color: white;
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+}
+
+.wrapper .output h1,
+.wrapper .output h2,
+.wrapper .output h3,
+.wrapper .output h4 {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.wrapper .output h1,
+.wrapper .output h2,
+.wrapper .output h3,
+.wrapper .output h4,
+.wrapper .output h5,
+.wrapper .output p {
+  margin-bottom: 24px;
+  padding: 0;
+}
+
+.wrapper .output h1 {
+  font-size: 36px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.wrapper .output h1::after {
+  position: absolute;
+  top: 120%;
+  content: "";
+  left: 0;
+  width: 100%;
+  background-color: #7a7a7a;
+  height: 1px;
+}
+
+.wrapper .output h2 {
+  font-size: 30px;
+  margin: 24px 0 6px;
+}
+
+.wrapper .output h3 {
+  font-size: 26px;
+}
+
+.wrapper .output h4 {
+  font-size: 22px;
+}
+
+.wrapper .output h5 {
+  font-size: 20px;
+}
+
+.wrapper .output a {
+  color: #35ff69;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+.wrapper .output ul,
+.wrapper .output ol {
+  padding: 0;
+  margin: 0;
+  margin-left: 40px;
+}
+
+.wrapper .output li {
+  line-height: 1.6;
+}
+
+.wrapper .output li ul,
+.wrapper .output li ul {
+  margin-left: 24px;
+}
+
+.wrapper .output p,
+.wrapper .output ul,
+.wrapper .output ol {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 540px;
+}
+
+.wrapper .output code {
+  padding: 2px 6px;
+  border: 1px solid #000000;
+  background-color: #1d1a1a;
+  font-family: "Roboto Mono", monospace;
+  line-height: 1.7;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.wrapper .output pre {
+  padding: 0px 24px;
+  max-width: 800px;
+  white-space: pre-wrap;
+  padding: 10px 20px;
+  border: 1px solid #000000;
+  background-color: #1d1a1a;
+  margin: 10px 0 25px;
+}
+
+.wrapper .output pre code {
+  padding: 0;
+  background-color: none;
+  border: none;
+}
+
+.wrapper .output aside {
+  display: block;
+  float: right;
+  width: 390px;
+}
+
+.wrapper .output blockquote {
+  margin: 1em 2em;
+  max-width: 476px;
+}
+
+.wrapper .output blockquote p {
+  color: #2a2a2a;
+  max-width: 460px;
+}
+
+.wrapper .output hr {
+  width: 540px;
+  text-align: left;
+  margin: 0 auto 0 0;
+  color: #646464;
+}
+
+.wrapper .output table {
+  border-collapse: collapse;
+  margin: 1em 1em;
+  border: 1px solid #ccc;
+}
+
+.wrapper .output table thead {
+  background-color: #eee;
+}
+
+.wrapper .output table thead td {
+  color: #666;
+}
+
+.wrapper .output table td {
+  padding: 0.5em 1em;
+  border: 1px solid #ccc;
+}
+
+.wrapper .input_field textarea {
+  font-size: 18px;
+  background-color: #1B181A;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */

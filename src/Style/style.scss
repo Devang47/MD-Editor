@@ -1,8 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap");
 
-// font-family: 'Fira Code', monospace;
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Mono&display=swap");
 
 * {
   margin: 0;
@@ -13,17 +11,20 @@
 body {
   height: 100vh;
   min-height: 550px;
+  overflow: hidden;
 }
 
 nav {
+  background-color: #0D0D0D;
   ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
     list-style-type: none;
     padding: 10px 35px;
-    border: 1px solid #f6f6f6;
+    border: 1px solid #000000;
     font-family: "Montserrat", sans-serif;
+    color: white;
     li {
       .github_logo {
         display: block;
@@ -33,9 +34,13 @@ nav {
         svg {
           height: 100%;
           display: block;
+          path {
+            fill: white;
+          }
         }
       }
       h1 {
+        padding-left: 77px;
         cursor: pointer;
         display: block;
         width: fit-content;
@@ -51,6 +56,9 @@ nav {
       gap: 3px;
       svg {
         height: 18px;
+        path {
+          fill: #35ff69;
+        }
       }
       .autosave_txt {
         font-size: 15px;
@@ -61,6 +69,170 @@ nav {
   }
 }
 
-.red {
-  color: #ff3366;
+.highlight {
+  color: #35ff69;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 90vh;
+  .input_field,
+  .output {
+    width: 100%;
+    height: 100%;
+    textarea,
+    .output_box {
+      width: 100%;
+      height: 90vh;
+      max-height: 850px;
+      border: none;
+      outline: none;
+      resize: none;
+      overflow: scroll;
+      padding: 20px 30px;
+      line-height: 1.5;
+      color: white;
+    }
+  }
+  .output {
+    background-color: #110F0F;
+    color: white;
+    font-family: "Lato", sans-serif;
+    line-height: 1.6;
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: #ffffff;
+      font-weight: 600;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+      margin-bottom: 24px;
+      padding: 0;
+    }
+    h1 {
+      font-size: 36px;
+      position: relative;
+      margin-bottom: 50px;
+      &::after {
+        position: absolute;
+        top: 120%;
+        content: "";
+        left: 0;
+        width: 100%;
+        background-color: rgb(122, 122, 122);
+        height: 1px;
+      }
+    }
+    h2 {
+      font-size: 30px;
+      margin: 24px 0 6px;
+    }
+    h3 {
+      font-size: 26px;
+    }
+    h4 {
+      font-size: 22px;
+    }
+    h5 {
+      font-size: 20px;
+    }
+    a {
+      color: #35ff69;
+      margin: 0;
+      padding: 0;
+      vertical-align: baseline;
+    }
+    ul,
+    ol {
+      padding: 0;
+      margin: 0;
+      margin-left: 40px;
+    }
+    li {
+      line-height: 1.6;
+    }
+    li ul,
+    li ul {
+      margin-left: 24px;
+    }
+    p,
+    ul,
+    ol {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 540px;
+    }
+    code {
+      padding: 2px 6px;
+      border: 1px solid #000000;
+      background-color: #1d1a1a;
+      font-family: "Roboto Mono", monospace;
+      line-height: 1.7;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    pre {
+      padding: 0px 24px;
+      max-width: 800px;
+      white-space: pre-wrap;
+      padding: 10px 20px;
+      border: 1px solid #000000;
+      background-color: #1d1a1a;
+      margin: 10px 0 25px;
+      code {
+        padding: 0;
+        background-color: none;
+        border: none;
+      }
+    }
+    aside {
+      display: block;
+      float: right;
+      width: 390px;
+    }
+    blockquote {
+      margin: 1em 2em;
+      max-width: 476px;
+    }
+    blockquote p {
+      color: rgb(42, 42, 42);
+      max-width: 460px;
+    }
+    hr {
+      width: 540px;
+      text-align: left;
+      margin: 0 auto 0 0;
+      color: rgb(100, 100, 100);
+    }
+    table {
+      border-collapse: collapse;
+      margin: 1em 1em;
+      border: 1px solid #ccc;
+    }
+    table thead {
+      background-color: #eee;
+    }
+    table thead td {
+      color: #666;
+    }
+    table td {
+      padding: 0.5em 1em;
+      border: 1px solid #ccc;
+    }
+  }
+  .input_field {
+    textarea {
+      font-size: 18px;
+      background-color: #1B181A;
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+    }
+  }
 }

@@ -28,7 +28,7 @@ function Navbar() {
           </a>
         </li>
         <li className="logo">
-          <h1> MD Editor<span className="red">.</span> </h1>
+          <h1> MD Editor<span className="highlight">.</span> </h1>
         </li>
         <li className="autosave">
           <svg
