@@ -1,10 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
 
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap");
 
 // font-family: 'Fira Code', monospace;
-
-// font-family: 'Poppins', sans-serif;
 
 * {
   margin: 0;
@@ -22,11 +20,10 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
     list-style-type: none;
     padding: 10px 35px;
     border: 1px solid #f6f6f6;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     li {
       .github_logo {
         display: block;
@@ -45,34 +42,25 @@ nav {
         font-size: 21px;
         position: relative;
         font-weight: 700;
-        // &::after {
-        //   content: "";
-        //   position: absolute;
-        //   top: 96%;
-        //   left: 50%;
-        //   transform: translate(-50%, -50%);
-        //   height: 3px;
-        //   width: 70%;
-        //   background-color: #ff3366;
-        // }
       }
     }
-    .autosave{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 3px;
-        svg{
-            height: 19px;
-        }
-        .autosave_txt{
-            font-size: 14px;
-            font-weight: 600;
-        }
+    .autosave {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      svg {
+        height: 18px;
+      }
+      .autosave_txt {
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
     }
   }
 }
 
-.red{
-    color: #ff3366;
+.red {
+  color: #ff3366;
 }
