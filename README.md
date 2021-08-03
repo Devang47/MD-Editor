@@ -1,70 +1,51 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Welcome to MD Editor.
 
-## Available Scripts
+This editor is developed by Devang Saklani from **INDIA**  ( as a side project ).
+ 
+*Basic usage:*
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
 
-In the project directory, you can run:
+*This text will be italic*
+_This will also be italic_
 
-### `yarn start`
+**This text will be bold**
+__This will also be bold__
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+_You **can** combine them_
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+## List
+* Item 1
+* Item 2
+  * Item 2a
+  * Item 2b
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Item 1
+1. Item 2
+1. Item 3
+   1. Item 3a
+   1. Item 3b
 
-### `yarn build`
+##  Table
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link a Website!](https://devang-saklani.web.app)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Finally some lorem Ipsum
 
-### `yarn eject`
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida eros nec mollis sodales. Proin eu rutrum nisi, at feugiat neque. Sed sit amet quam vel justo maximus efficitur et id mauris. Pellentesque ultrices metus at gravida tincidunt. Nulla placerat pretium nulla. Proin ultricies magna ut sem pharetra, non blandit erat bibendum. Pellentesque risus justo, placerat nec nibh at, feugiat faucibus lorem. Maecenas tincidunt dolor ex, eu ultricies velit tempor nec. Suspendisse fermentum pretium tristique. Etiam eu lectus massa. Suspendisse est metus, dictum nec iaculis a, ullamcorper quis metus. Nullam nec placerat elit. Nullam leo sem, scelerisque in augue egestas, fringilla suscipit tellus. Vestibulum a tincidunt turpis. Sed feugiat, enim quis fringilla ultricies, ante est dignissim purus, id pulvinar diam turpis et tortor. Nunc vitae odio vehicula, condimentum sapien eget, fermentum nunc.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## How to use:
+Just clone this repo and run ` npm start  ` or ` yarn start ` to start.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
