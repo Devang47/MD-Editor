@@ -10,6 +10,7 @@ function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             className="github_logo"
+            aria-label='github_link'
           >
             <svg
               width="30"
