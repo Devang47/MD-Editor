@@ -119,7 +119,7 @@ nav ul .autosave .autosave_txt {
 .wrapper .output .output_box {
   width: 100%;
   height: 90vh;
-  max-height: 850px;
+  max-height: 1100px;
   border: none;
   outline: none;
   resize: none;
@@ -233,7 +233,7 @@ nav ul .autosave .autosave_txt {
 .wrapper .output ol {
   font-size: 18px;
   line-height: 1.6;
-  max-width: 540px;
+  max-width: 580px;
   color: #f1f1f1;
 }
 
@@ -324,5 +324,67 @@ nav ul .autosave .autosave_txt {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   border-bottom: 1px solid #000000;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  .wrapper .input_field,
+  .wrapper .output {
+    height: 100%;
+    min-height: 500px;
+  }
+  .wrapper .input_field textarea,
+  .wrapper .input_field .output_box,
+  .wrapper .output textarea,
+  .wrapper .output .output_box {
+    height: 100%;
+  }
+  .wrapper .input_field .output_box,
+  .wrapper .output .output_box {
+    border-bottom: 3px solid #000;
+  }
+  .wrapper .input_field {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .wrapper .output {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav ul {
+    padding: 10px 25px;
+  }
+  nav ul li .github_logo {
+    height: 22px;
+  }
+  nav ul li h1 {
+    font-size: 18px;
+    padding-left: 0px;
+  }
+  nav ul .autosave svg {
+    height: 20px;
+  }
+  nav ul .autosave .autosave_txt {
+    display: none;
+    font-size: 12px;
+  }
+  .wrapper .input_field,
+  .wrapper .output {
+    height: 50vh;
+    min-height: 300px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
